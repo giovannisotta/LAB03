@@ -1,0 +1,50 @@
+# Diretórios de banco de dados e compilação
+db/
+incremental_db/
+output_files/
+simulation/
+greybox_tmp/
+qdb/
+PLL_*/
+*_pll_*
+
+# Arquivos de relatório e resumo (gerados a cada compilação)
+*.rpt
+*.summary
+*.smsg
+*.chg
+*.hierarchy
+*.pin
+*.sof.log
+*.pof.log
+
+# Arquivos de workspace/estado pessoal (não deveriam ir pro repo compartilhado)
+*.qws
+*.done
+*.cbx.rds
+#*.cof
+
+# Arquivos temporários e de cache
+*.bak
+*.rej
+*_bb.v
+*_bb.vhd
+
+# Arquivos de programação da placa (SOF/POF são regeráveis, não precisam versionar)
+*.sof
+*.pof
+*.jam
+*.jbc
+*.svf
+*.rbf
+
+# Arquivos de simulação (ModelSim/QuestaSim, se usar)
+*.vwf.bak
+transcript
+#wave.do
+vsim.wlf
+*.vwf
+
+# Windows
+Thumbs.db
+desktop.ini
