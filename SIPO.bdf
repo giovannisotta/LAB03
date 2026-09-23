@@ -174,7 +174,7 @@ refer to the applicable agreement for further details.
 	(bus)
 )
 (connector
-	(text "<<__$DEF_ALIAS8381>>" (rect 536 272 661 285)(font "Intel Clear" )(invisible))
+	(text "D[7..1]" (rect 450 272 483 285)(font "Intel Clear" ))
 	(pt 440 288)
 	(pt 560 288)
 	(bus)

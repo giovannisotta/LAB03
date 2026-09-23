@@ -20,7 +20,7 @@ refer to the applicable agreement for further details.
 */
 (header "symbol" (version "1.2"))
 (symbol
-	(rect 16 16 160 112)
+	(rect 16 16 168 112)
 	(text "PISO" (rect 5 0 33 15)(font "Intel Clear" (font_size 8)))
 	(text "inst" (rect 8 79 26 92)(font "Intel Clear" ))
 	(port
@@ -33,32 +33,32 @@ refer to the applicable agreement for further details.
 	(port
 		(pt 0 48)
 		(input)
-		(text "SH/LD" (rect 0 0 37 15)(font "Intel Clear" (font_size 8)))
-		(text "SH/LD" (rect 21 43 58 58)(font "Intel Clear" (font_size 8)))
+		(text "SW_LOAD" (rect 0 0 59 15)(font "Intel Clear" (font_size 8)))
+		(text "SW_LOAD" (rect 21 43 80 58)(font "Intel Clear" (font_size 8)))
 		(line (pt 0 48)(pt 16 48))
 	)
 	(port
 		(pt 0 64)
 		(input)
-		(text "OP" (rect 0 0 17 15)(font "Intel Clear" (font_size 8)))
-		(text "OP" (rect 21 59 38 74)(font "Intel Clear" (font_size 8)))
+		(text "Clock" (rect 0 0 31 15)(font "Intel Clear" (font_size 8)))
+		(text "Clock" (rect 21 59 52 74)(font "Intel Clear" (font_size 8)))
 		(line (pt 0 64)(pt 16 64))
 	)
 	(port
-		(pt 144 32)
+		(pt 152 32)
 		(output)
 		(text "Q[7..0]" (rect 0 0 38 15)(font "Intel Clear" (font_size 8)))
-		(text "Q[7..0]" (rect 85 27 123 42)(font "Intel Clear" (font_size 8)))
-		(line (pt 144 32)(pt 128 32)(line_width 3))
+		(text "Q[7..0]" (rect 93 27 131 42)(font "Intel Clear" (font_size 8)))
+		(line (pt 152 32)(pt 136 32)(line_width 3))
 	)
 	(port
-		(pt 144 48)
+		(pt 152 48)
 		(output)
 		(text "S/O" (rect 0 0 22 15)(font "Intel Clear" (font_size 8)))
-		(text "S/O" (rect 101 43 123 58)(font "Intel Clear" (font_size 8)))
-		(line (pt 144 48)(pt 128 48))
+		(text "S/O" (rect 109 43 131 58)(font "Intel Clear" (font_size 8)))
+		(line (pt 152 48)(pt 136 48))
 	)
 	(drawing
-		(rectangle (rect 16 16 128 80))
+		(rectangle (rect 16 16 136 80))
 	)
 )

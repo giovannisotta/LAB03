@@ -68,6 +68,9 @@ set_location_assignment PIN_B14 -to SW8
 set_location_assignment PIN_B8 -to PB0
 set_location_assignment PIN_A7 -to PB1
 
+set_instance_assignment -name IO_STANDARD "2.5 V SCHMITT TRIGGER" -to PB0
+set_instance_assignment -name IO_STANDARD "2.5 V SCHMITT TRIGGER" -to PB1
+
 set_location_assignment PIN_C14 -to HEX0[0]
 set_location_assignment PIN_E15 -to HEX0[1]
 set_location_assignment PIN_C15 -to HEX0[2]
@@ -108,28 +111,10 @@ set_location_assignment PIN_D13 -to LED[4]
 set_location_assignment PIN_C13 -to LED[5]
 set_location_assignment PIN_E14 -to LED[6]
 set_location_assignment PIN_D14 -to LED[7]
-set_location_assignment PIN_B11 -to LED9
 
 
-set_location_assignment PIN_P11 -to CLK_50
-
-
-set_instance_assignment -name IO_STANDARD "2.5 V SCHMITT TRIGGER" -to PB0
-set_instance_assignment -name IO_STANDARD "2.5 V SCHMITT TRIGGER" -to PB1
-
-set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
-set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
-set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
-
-
-
-
-set_global_assignment -name BDF_FILE EDGE_PULSE.bdf
 set_global_assignment -name BDF_FILE SHIFT.bdf
-set_global_assignment -name BDF_FILE "../Lab2-REGISTRADOR-DE-DESLOCAMENTO-MULTIPLEXA-O-DE-DISPLAYS/REGISTRADOR4BITS.bdf"
 set_global_assignment -name BDF_FILE 7SEGDECODERBAR.bdf
-set_global_assignment -name BDF_FILE DESLOCADOR.bdf
-set_global_assignment -name BDF_FILE REGISTRADOR4BITS.bdf
 set_global_assignment -name BDF_FILE SEG_F.bdf
 set_global_assignment -name BDF_FILE SEG_G.bdf
 set_global_assignment -name BDF_FILE SEG_A.bdf
@@ -139,11 +124,10 @@ set_global_assignment -name BDF_FILE SEG_D.bdf
 set_global_assignment -name BDF_FILE SEG_E.bdf
 set_global_assignment -name BDF_FILE LAB03.bdf
 set_global_assignment -name BDF_FILE PISO.bdf
-set_global_assignment -name BDF_FILE SHIFTREG8.bdf
 set_global_assignment -name BDF_FILE MUX8.bdf
-set_global_assignment -name BDF_FILE MUX1.bdf
 set_global_assignment -name BDF_FILE "7-Segment-Display-Controller.bdf"
 set_global_assignment -name BDF_FILE SIPO.bdf
-set_global_assignment -name BDF_FILE TESTE.bdf
-set_global_assignment -name VHDL_FILE clk_div.vhd
+set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
+set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
+set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
 set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
