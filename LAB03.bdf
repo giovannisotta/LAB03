@@ -74,7 +74,7 @@ refer to the applicable agreement for further details.
 	(input)
 	(rect 544 216 712 232)
 	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
-	(text "SW8" (rect 5 0 30 11)(font "Arial" ))
+	(text "SW8" (rect 5 0 29 11)(font "Arial" ))
 	(pt 168 8)
 	(drawing
 		(line (pt 84 12)(pt 109 12))
@@ -85,6 +85,7 @@ refer to the applicable agreement for further details.
 		(line (pt 109 12)(pt 113 8))
 	)
 	(text "VCC" (rect 128 7 148 17)(font "Arial" (font_size 6)))
+	(annotation_block (location)(rect 480 232 544 248))
 )
 (pin
 	(output)
@@ -171,23 +172,6 @@ refer to the applicable agreement for further details.
 	)
 	(annotation_block (location)(rect 1200 432 1256 448))
 )
-(pin
-	(output)
-	(rect 1032 264 1208 280)
-	(text "OUTPUT" (rect 1 0 39 10)(font "Arial" (font_size 6)))
-	(text "LED9" (rect 90 0 117 13)(font "Intel Clear" ))
-	(pt 0 8)
-	(drawing
-		(line (pt 0 8)(pt 52 8))
-		(line (pt 52 4)(pt 78 4))
-		(line (pt 52 12)(pt 78 12))
-		(line (pt 52 12)(pt 52 4))
-		(line (pt 78 4)(pt 82 8))
-		(line (pt 82 8)(pt 78 12))
-		(line (pt 78 12)(pt 82 8))
-	)
-	(annotation_block (location)(rect 1272 304 1328 320))
-)
 (symbol
 	(rect 288 384 336 416)
 	(text "NOT" (rect 1 0 21 10)(font "Arial" (font_size 6)))
@@ -231,7 +215,7 @@ refer to the applicable agreement for further details.
 	)
 )
 (symbol
-	(rect 296 344 344 376)
+	(rect 416 344 464 376)
 	(text "NOT" (rect 1 0 21 10)(font "Arial" (font_size 6)))
 	(text "432423" (rect 3 21 40 32)(font "Arial" ))
 	(port
@@ -348,35 +332,6 @@ refer to the applicable agreement for further details.
 	)
 )
 (symbol
-	(rect 520 416 632 512)
-	(text "SIPO" (rect 5 0 33 15)(font "Intel Clear" (font_size 8)))
-	(text "inst2" (rect 8 79 32 92)(font "Intel Clear" ))
-	(port
-		(pt 0 32)
-		(input)
-		(text "CLK" (rect 0 0 23 15)(font "Intel Clear" (font_size 8)))
-		(text "CLK" (rect 21 27 44 42)(font "Intel Clear" (font_size 8)))
-		(line (pt 0 32)(pt 16 32))
-	)
-	(port
-		(pt 0 48)
-		(input)
-		(text "S/I" (rect 0 0 16 15)(font "Intel Clear" (font_size 8)))
-		(text "S/I" (rect 21 43 37 58)(font "Intel Clear" (font_size 8)))
-		(line (pt 0 48)(pt 16 48))
-	)
-	(port
-		(pt 112 32)
-		(output)
-		(text "Q[7..0]" (rect 0 0 38 15)(font "Intel Clear" (font_size 8)))
-		(text "Q[7..0]" (rect 53 27 91 42)(font "Intel Clear" (font_size 8)))
-		(line (pt 112 32)(pt 96 32)(line_width 3))
-	)
-	(drawing
-		(rectangle (rect 16 16 96 80))
-	)
-)
-(symbol
 	(rect 496 312 648 408)
 	(text "PISO" (rect 5 0 33 15)(font "Intel Clear" (font_size 8)))
 	(text "inst" (rect 8 79 26 92)(font "Intel Clear" ))
@@ -455,6 +410,42 @@ refer to the applicable agreement for further details.
 		(rectangle (rect 16 16 112 80))
 	)
 )
+(symbol
+	(rect 520 416 648 512)
+	(text "SIPO" (rect 5 0 33 15)(font "Intel Clear" (font_size 8)))
+	(text "inst2" (rect 8 79 32 92)(font "Intel Clear" ))
+	(port
+		(pt 0 32)
+		(input)
+		(text "CLK" (rect 0 0 23 15)(font "Intel Clear" (font_size 8)))
+		(text "CLK" (rect 21 27 44 42)(font "Intel Clear" (font_size 8)))
+		(line (pt 0 32)(pt 16 32))
+	)
+	(port
+		(pt 0 48)
+		(input)
+		(text "S/I" (rect 0 0 16 15)(font "Intel Clear" (font_size 8)))
+		(text "S/I" (rect 21 43 37 58)(font "Intel Clear" (font_size 8)))
+		(line (pt 0 48)(pt 16 48))
+	)
+	(port
+		(pt 0 64)
+		(input)
+		(text "CLEAR" (rect 0 0 37 15)(font "Intel Clear" (font_size 8)))
+		(text "CLEAR" (rect 21 59 58 74)(font "Intel Clear" (font_size 8)))
+		(line (pt 0 64)(pt 16 64))
+	)
+	(port
+		(pt 128 32)
+		(output)
+		(text "Q[7..0]" (rect 0 0 38 15)(font "Intel Clear" (font_size 8)))
+		(text "Q[7..0]" (rect 69 27 107 42)(font "Intel Clear" (font_size 8)))
+		(line (pt 128 32)(pt 112 32)(line_width 3))
+	)
+	(drawing
+		(rectangle (rect 16 16 112 80))
+	)
+)
 (connector
 	(pt 992 344)
 	(pt 1040 344)
@@ -508,11 +499,6 @@ refer to the applicable agreement for further details.
 	(bus)
 )
 (connector
-	(text "S_I/O" (rect 1024 256 1052 269)(font "Intel Clear" ))
-	(pt 1032 272)
-	(pt 1024 272)
-)
-(connector
 	(pt 872 392)
 	(pt 872 504)
 	(bus)
@@ -540,12 +526,6 @@ refer to the applicable agreement for further details.
 	(pt 520 464)
 )
 (connector
-	(text "QS[7..0]" (rect 642 432 683 445)(font "Intel Clear" ))
-	(pt 632 448)
-	(pt 672 448)
-	(bus)
-)
-(connector
 	(pt 472 336)
 	(pt 472 344)
 	(bus)
@@ -556,17 +536,8 @@ refer to the applicable agreement for further details.
 	(bus)
 )
 (connector
-	(pt 296 360)
-	(pt 280 360)
-)
-(connector
 	(pt 520 448)
 	(pt 360 448)
-)
-(connector
-	(text "PB1_NEG" (rect 402 344 449 357)(font "Intel Clear" ))
-	(pt 344 360)
-	(pt 496 360)
 )
 (connector
 	(pt 360 400)
@@ -629,5 +600,44 @@ refer to the applicable agreement for further details.
 	(pt 808 200)
 	(bus)
 )
+(connector
+	(pt 632 448)
+	(pt 648 448)
+	(bus)
+)
+(connector
+	(text "QS[7..0]" (rect 642 432 683 445)(font "Intel Clear" ))
+	(pt 648 448)
+	(pt 672 448)
+	(bus)
+)
+(connector
+	(pt 520 480)
+	(pt 384 480)
+)
+(connector
+	(pt 384 480)
+	(pt 384 360)
+)
+(connector
+	(text "<<__$DEF_ALIAS356>>" (rect 402 344 521 357)(font "Intel Clear" )(invisible))
+	(pt 456 360)
+	(pt 464 360)
+)
+(connector
+	(pt 464 360)
+	(pt 496 360)
+)
+(connector
+	(pt 280 360)
+	(pt 384 360)
+)
+(connector
+	(pt 384 360)
+	(pt 416 360)
+)
 (junction (pt 864 392))
 (junction (pt 360 400))
+(junction (pt 648 448))
+(junction (pt 384 360))
+(junction (pt 464 360))

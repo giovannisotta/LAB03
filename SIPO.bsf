@@ -20,7 +20,7 @@ refer to the applicable agreement for further details.
 */
 (header "symbol" (version "1.2"))
 (symbol
-	(rect 16 16 128 112)
+	(rect 16 16 144 112)
 	(text "SIPO" (rect 5 0 33 15)(font "Intel Clear" (font_size 8)))
 	(text "inst" (rect 8 79 26 92)(font "Intel Clear" ))
 	(port
@@ -38,13 +38,20 @@ refer to the applicable agreement for further details.
 		(line (pt 0 48)(pt 16 48))
 	)
 	(port
-		(pt 112 32)
+		(pt 0 64)
+		(input)
+		(text "CLEAR" (rect 0 0 37 15)(font "Intel Clear" (font_size 8)))
+		(text "CLEAR" (rect 21 59 58 74)(font "Intel Clear" (font_size 8)))
+		(line (pt 0 64)(pt 16 64))
+	)
+	(port
+		(pt 128 32)
 		(output)
 		(text "Q[7..0]" (rect 0 0 38 15)(font "Intel Clear" (font_size 8)))
-		(text "Q[7..0]" (rect 53 27 91 42)(font "Intel Clear" (font_size 8)))
-		(line (pt 112 32)(pt 96 32)(line_width 3))
+		(text "Q[7..0]" (rect 69 27 107 42)(font "Intel Clear" (font_size 8)))
+		(line (pt 128 32)(pt 112 32)(line_width 3))
 	)
 	(drawing
-		(rectangle (rect 16 16 96 80))
+		(rectangle (rect 16 16 112 80))
 	)
 )
